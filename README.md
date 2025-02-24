@@ -3,4 +3,4 @@ code for website of sotto(updater ver)
 
 更新
 
-ブランチのテスト
+ブランチのテスと
