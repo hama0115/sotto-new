@@ -13,7 +13,9 @@ a {
   text-decoration: none;
 }
 
-/* 全体 */
+/* ========================
+全体
+======================== */
 
 body {
   /* フォントファミリー */
@@ -73,7 +75,7 @@ img {
 
 .site-menu ul li {
   margin: 0 40px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .icon-list ul {
@@ -82,7 +84,7 @@ img {
 
 .icon-list ul li {
   margin: 0 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .toggle-menu-button {
@@ -120,7 +122,8 @@ img {
   color: #8EBA70;
   font-size: 3rem;
 }
-.heading p {
+.h2-with {
+  /* フォント指定に関しては「全体」で指定 */
   font-size: 2rem;
   margin-top: 30px;
 }
@@ -137,6 +140,7 @@ img {
   margin-right: 50px;
 }
 .core-area-text h3 {
+  font-size: 2rem;
   text-align: center;
 }
 .core-area-textmain {
@@ -188,6 +192,10 @@ img {
 }
 .cred-text-area h3 {
   margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.cred-text {
+  font-size: 1.5rem;
 }
 
 
@@ -198,7 +206,7 @@ img {
 
 .footer {
   background-color: #EADEBB;
-  padding: 60px 0;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,24 +214,33 @@ img {
 
 .footer-logo {
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .address {
-  margin-top: 50px;
-  font-size: 2rem;
+  margin-top: 20px;
+  font-size: 1rem;
   text-align: center;
 }
 
 .footer .icon-list-wrapper {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .copyright {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
+
+  /* ========================
+  全体
+  ======================== */
+
+  /* SP版では強制改行を無効化 */
+  br {
+    display: none;
+  }
 
     /* ========================
   ヘッダー
@@ -289,6 +306,80 @@ img {
 
   .toggle-menu-button {
     display: block;
+  }
+
+  /* ========================
+  メイン
+  ======================== */
+
+  .main {
+    padding-top: 50px;
+  }
+  
+  /*-- 「ABOUT US」ページ --*/
+  
+  /*-- 「GREETING」コンテンツ --*/
+
+  .greeting {
+    padding: 30px 0;
+  }
+
+  .heading h2 {
+    font-size: 2rem;
+  }
+  .h2-with {
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+
+  .core-area {
+    display: block;
+    margin-top: 30px;
+  }
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 20%;
+    margin: 0 auto;
+  }
+  .core-area-text h3 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
+  .core-area-textmain {
+    margin-top: 0;
+  }
+  .career {
+    padding: 30px 0;
+  }
+
+  /*-- 「CRED」コンテンツ --*/
+  .cred {
+    padding: 30px 0;
+  }
+  .cred-main-wrapper {
+    margin-top: 30px;
+  }
+  .cred-main {
+    max-width: 95%;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: left;
+    border: solid 3px #ff0000;
+  }
+  .cred-sub {
+    margin-top: 60px;
+  }
+  .cred-text-area:not(.cred-text-area-first) {
+    margin-top: 40px;  
+  }
+  .cred-text-area h3 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  .cred-text {
+    font-size: 1rem;
   }
 
   /* ========================
