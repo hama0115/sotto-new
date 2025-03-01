@@ -148,6 +148,7 @@ img {
   flex-direction: column;
   text-align: center;
   width: 400px;
+  max-width: 100%;
   padding: 30px 30px 20px 30px;
   border: solid 1px #000;
 }
@@ -159,6 +160,7 @@ img {
 .aboutus-img {
   order: 1;
   width: 320px;
+  max-width: 100%;
   height: 180px;
   margin: 0 auto;
 }
@@ -191,7 +193,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 30px;
+  padding: 30px;
   border: solid 1px #000;
   border-radius: 30px;
   background-color: #fff;
@@ -199,7 +201,7 @@ img {
 .service-cardtitle {
   order: 2;
   font-size: 2rem;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .service-img {
   order: 1;
@@ -256,6 +258,11 @@ img {
 }
 .core-area-textmain p {
   margin-top: 1rem;
+}
+.representative-name {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .career {
@@ -423,8 +430,74 @@ img {
   .main {
     padding-top: 50px;
   }
+
+  /*---- トップページ ----*/
+
+  /*-- ファーストビュー --*/
+  .first-view {
+    height: calc(100vh - 50px);
+    background-image: url(./img/sotto-top-firstview-sp.jpeg);
+  }
+  .first-view-text {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-bottom: 250px;
+  }
+  br {
+    display: block;
+  }
+
+  /*-- 「ABOUT US」コンテンツ --*/
+  .aboutus {
+    padding: 30px 0;
+  }
+  .card {
+    display: block;
+    margin: 30px auto;
+  }
+  .aboutus-card {
+    padding: 0 0 30px;
+  }
+  .aboutus-card:not(.aboutus-card-first) {
+    margin-top: 50px;
+  }
+  .aboutus-cardtitle {
+  }
+  .aboutus-img {
+    width: auto;
+    height: auto;
+  }
+  .title-with {
+    margin-top: 5px;
+  }
+
+  /*-- 「SERVICE」コンテンツ --*/
+  .service {
+    padding: 30px 0;
+  }
+  .card2 {
+    display: block;
+    margin: 30px auto 0;
+  }
+  .service-card {
+    padding: 40px 0px 20px;
+  }
+  .service-card:not(.service-card-first) {
+    margin-top: 50px;
+  }
+  .service-cardtitle {
+    margin-top: 10px;
+  }
+  .service-img {
+    width: auto;
+    height: auto;
+  }
+
   
-  /*-- 「ABOUT US」ページ --*/
+  /*---- 「ABOUT US」ページ ----*/
   
   /*-- 「GREETING」コンテンツ --*/
 
