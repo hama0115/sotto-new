@@ -35,10 +35,10 @@ h3,
 h4,
 h5,
 h6,
-dt,
-dd,
 .h2-with,
-.cred-main {
+.cred-main,
+.aboutus-cardtitle,
+.aboutus-cardtitle-with {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -134,41 +134,31 @@ img {
   max-width: 90%;
   margin: 0 auto;
 }
-
-.card {
+.card-list {
   display: flex;
+  gap: 50px;
   justify-content: center;
-  gap: 100px;
-  width: 1100px;
-  max-width: 100%;
-  margin: 60px auto;
+  padding: 50px 0;
+  text-align: center;
 }
 .aboutus-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  /*
+  flex-shrink: 0;
+  */
   width: 400px;
-  max-width: 100%;
   padding: 30px 30px 20px 30px;
+  margin: 0 auto;
   border: solid 1px #000;
 }
 .aboutus-cardtitle {
-  order: 2;
-  margin-top: 30px;
   font-size: 2rem;
+  margin-top: 30px;
 }
-.aboutus-img {
-  order: 1;
-  width: 320px;
-  max-width: 100%;
-  height: 180px;
-  margin: 0 auto;
-}
-.title-with {
-  order: 3;
-  margin-top: 10px;
+.aboutus-cardtitle-with {
   font-size: 1.5rem;
+  margin-top: 10px;
 }
+
 
 /*-- 「SERVICE」コンテンツ --*/
 .service {
@@ -179,34 +169,6 @@ img {
   width: 1100px;
   max-width: 90%;
   margin: 0 auto;
-}
-.card2 {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  width: 1100px;
-  max-width: 100%;
-  margin: 60px auto 0;
-}
-.service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
-  border: solid 1px #000;
-  border-radius: 30px;
-  background-color: #fff;
-}
-.service-cardtitle {
-  order: 2;
-  font-size: 2rem;
-  margin-top: 20px;
-}
-.service-img {
-  order: 1;
-  width: 250px;
-  height: 180px;
 }
 
 /*---- 「ABOUT US」ページ ----*/
@@ -454,24 +416,15 @@ img {
   .aboutus {
     padding: 30px 0;
   }
-  .card {
+  .card-list {
     display: block;
-    margin: 30px auto;
+    padding: 30px 0 0;
   }
   .aboutus-card {
-    padding: 0 0 30px;
+    max-width: 100%;
   }
   .aboutus-card:not(.aboutus-card-first) {
     margin-top: 50px;
-  }
-  .aboutus-cardtitle {
-  }
-  .aboutus-img {
-    width: auto;
-    height: auto;
-  }
-  .title-with {
-    margin-top: 5px;
   }
 
   /*-- 「SERVICE」コンテンツ --*/
