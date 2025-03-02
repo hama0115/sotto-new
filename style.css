@@ -38,7 +38,8 @@ h6,
 .h2-with,
 .cred-main,
 .aboutus-cardtitle,
-.aboutus-cardtitle-with {
+.aboutus-cardtitle-with,
+.service-card p {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -142,12 +143,8 @@ img {
   text-align: center;
 }
 .aboutus-card {
-  /*
-  flex-shrink: 0;
-  */
   width: 400px;
   padding: 30px 30px 20px 30px;
-  margin: 0 auto;
   border: solid 1px #000;
 }
 .aboutus-cardtitle {
@@ -169,6 +166,24 @@ img {
   width: 1100px;
   max-width: 90%;
   margin: 0 auto;
+}
+.service-list {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+}
+.service-card {
+  width: 312px;
+  padding: 30px;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 30px;
+}
+.service-card p {
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 /*---- 「ABOUT US」ページ ----*/
@@ -422,6 +437,7 @@ img {
   }
   .aboutus-card {
     max-width: 100%;
+    margin: 0 auto;
   }
   .aboutus-card:not(.aboutus-card-first) {
     margin-top: 50px;
@@ -431,22 +447,16 @@ img {
   .service {
     padding: 30px 0;
   }
-  .card2 {
+  .service-list {
     display: block;
-    margin: 30px auto 0;
+    padding: 30px 0 0;
   }
   .service-card {
-    padding: 40px 0px 20px;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .service-card:not(.service-card-first) {
-    margin-top: 50px;
-  }
-  .service-cardtitle {
-    margin-top: 10px;
-  }
-  .service-img {
-    width: auto;
-    height: auto;
+    margin-top: 40px;
   }
 
   
