@@ -96,6 +96,15 @@ img {
   margin: 0 30px;
   font-size: 1.5rem;
 }
+.icon-list a {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
 
 .toggle-menu-button {
   display: none;
@@ -410,6 +419,10 @@ img {
     margin: 0 10px;
     font-size: 1rem;
   }
+  .icon-list a {
+    width: 2rem;
+    height: 2rem;
+  }
 
   .toggle-menu-button {
     display: block;
@@ -559,7 +572,7 @@ img {
   }
 
   .footer .icon-list ul li {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .copyright {
