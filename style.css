@@ -265,10 +265,13 @@ img {
 .core-area-textmain p {
   margin-top: 1rem;
 }
-.representative-name {
+.rep {
   text-align: right;
   font-size: 1.2rem;
   font-weight: 700;
+}
+.rep-name {
+  font-size: 1.5rem;
 }
 
 .career {
