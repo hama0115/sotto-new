@@ -43,7 +43,11 @@ h6,
 .cred-main,
 .aboutus-cardtitle,
 .aboutus-cardtitle-with,
-.service-card p {
+.service-card p,
+/* 就活LPのフォント */
+.main-phrase,
+.message,
+.desc-container dl dt {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-style: normal;
   font-weight: 700;

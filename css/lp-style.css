@@ -3,6 +3,14 @@
 /* 就活支援LPのCSS */
 
 /* ========================
+全体
+======================== */
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ========================
 ヘッダー
 ======================== */
 
@@ -18,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.link-button {
+.line-button {
   display: inline-block;
   color: #fff;
   background-color: #06C755;
@@ -33,6 +41,33 @@
 /* ========================
 メイン
 ======================== */
+
+/* メイン全体、またはいくつかのセクションで共通部分 */
+.content {
+  padding: 60px 0;
+}
+.inner {
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.inner .line-button-area {
+  text-align: center;
+}
+.inner .line-button {
+  min-width: 600px;
+  font-size: 2rem;
+  line-height: 2;
+}
+.main-phrase {
+  margin-top: 100px;
+  font-size: 3rem;
+  line-height: 2;
+}
+.desc {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
 
 /*-- ファーストビュー --*/
 
@@ -60,3 +95,98 @@
 }
 
 /*-- 「introduction」セクション --*/
+
+.introduction {
+  background-color: #eadebb;
+}
+h2 {
+  text-align: center;
+}
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+/*-- 「Service」セクション --*/
+.service {
+  background-color: #FFF8E5;
+}
+.service-contents {
+  margin-top: 100px;
+}
+.service-contents li {
+  padding: 30px 50px;
+  background-color: #fff;
+}
+.service-contents li:not(.service-contents li:nth-child(1)) {
+  margin-top: 60px;
+}
+.service-contents li p{
+  margin-top: 20px;
+}
+
+/*-- LINEボタンエリア --*/
+.line-area {
+  padding: 60px 0;
+}
+.line-area p {
+  font-size: 2rem;
+  text-align: center;
+}
+.line-area p::before {
+  content: '↓';
+}
+.line-button-area {
+  margin-top: 60px;
+}
+
+/*-- 「コーチングスクール」エリア --*/
+.school {
+  background-color: #EADEBB;
+}
+
+/*-- 「philosophy」エリア --*/
+.philosophy {
+  background-color: #FFF8E5;
+}
+
+/*-- 「consultation」エリア --*/
+.message {
+  font-size: 3rem;
+  text-align: center;
+  padding: 60px 0;
+}
+.desc-area {
+  padding: 60px 0;
+  background-color: #EADEBB;
+}
+.desc-area p {
+  text-align: center;
+  font-size: 2rem;
+}
+.desc-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 1100px;
+  margin: 50px auto 0;
+}
+.desc-fa {
+  font-size: 5em;
+}
+.desc-container dl {
+  text-align: center;
+  max-width: 218px;
+}
+.desc-container dl dt {
+  font-size: 1.5rem;
+  margin-top: 60px;
+}
+.desc-container dl dd {
+  margin-top: 20px;
+}
