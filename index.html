@@ -26,9 +26,12 @@
 
       <!-- fontawesome -->
       <script src="https://kit.fontawesome.com/9ab3ae9094.js" crossorigin="anonymous"></script>
+
+    <!--#JS-->
     
     <!-- CSS -->
     <link  href="./css/reset.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
 
   </head>
@@ -62,7 +65,7 @@
       <section class="first-view">
         <h1 class="first-view-text">一人一人に寄り添い<br>憂を転じる</h1>
       </section>
-      <section class="aboutus">
+      <section class="aboutus" data-aos="fade-up">
         <div class="aboutus-inner">
           <div class="heading">
             <h2>ABOUT US</h2>
@@ -86,7 +89,7 @@
           </ul>
         </div>
       </section>
-      <section class="service">
+      <section class="service" data-aos="fade-up">
         <div class="service-inner">
           <div class="heading">
             <h2>SERVICE</h2>
@@ -126,5 +129,11 @@
       </div>        
       <p class="copyright"><small>&copy;copyright sotto.com All Right Reserved.</small></p>
     </footer>
+
+  <!-- JavaScrpt -->
+
+  <!-- AOS(head内だとダメみたい?) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>  
   </body>
 </html>

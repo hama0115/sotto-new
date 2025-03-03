@@ -105,6 +105,9 @@ img {
   height: 3rem;
   border-radius: 50%;
 }
+.icon-list a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .toggle-menu-button {
   display: none;
@@ -157,6 +160,15 @@ img {
   justify-content: center;
   padding: 50px 0;
   text-align: center;
+}
+.card-list a {
+  display: block;
+  transition-duration: 0.3s; 
+}
+.card-list a:hover {
+  transform: scale(0.95);
+  opacity: 0.5;
+  transition-duration: 0.3s;
 }
 .aboutus-card {
   width: 400px;
