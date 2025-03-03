@@ -17,6 +17,10 @@ a {
 全体
 ======================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* フォントファミリー */
   font-family: yu-gothic-pr6n, sans-serif;
@@ -75,10 +79,13 @@ img {
 .site-menu ul {
   display: flex;
 }
-
-.site-menu ul li {
-  margin: 0 40px;
+.site-menu ul li {  
+  padding: 1rem 40px;  
   font-size: 1rem;
+}
+.site-menu ul li:hover {
+  background-color: #fff;
+  transition-duration: 0.3s;
 }
 
 .icon-list ul {
@@ -323,6 +330,7 @@ img {
   margin-top: 20px;
 }
 
+
 @media screen and (max-width: 768px) {
 
   /* ========================
@@ -383,7 +391,14 @@ img {
   }
 
   .site-menu ul li {
-    margin: 20px 40px 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 2rem;
+  }
+  .site-menu ul li:hover {
+    color: #8eba70;
+    background-color: #fff;
+    transition-duration: 0.3s;
   }
 
   .icon-list-wrapper {

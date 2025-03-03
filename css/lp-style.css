@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* 就活支援LPのCSS */
+
+/* ========================
+ヘッダー
+======================== */
+
+.lp-header {
+  background-color: #fff8e5;
+}
+.lp-header-inner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-button {
+  display: inline-block;
+  color: #fff;
+  background-color: #06C755;
+  min-width: 326px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* ヘッダーロゴの設定はメインサイトと同じ */
+
+/* ========================
+メイン
+======================== */
+
+/*-- ファーストビュー --*/
+
+.first-view {
+  background-image: url(../img/jobhunting-support.jpeg);
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  gap: 50px;
+  padding-left: 40px;
+}
+.lp-first-view-text {
+  font-size: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.lp-first-view-text span {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+}
+.first-view p {
+  font-size: 1.5rem;
+  padding-left: 2em;
+}
+
+/*-- 「introduction」セクション --*/
