@@ -83,6 +83,7 @@ h2::after {
   line-height: 2;
 }
 .desc {
+  margin-top: 2em;
   font-size: 1.5rem;
 }
 
@@ -181,6 +182,8 @@ h2::after {
   font-size: 2rem;
 }
 .desc-container {
+}
+.desc-container-inner {  
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -342,7 +345,7 @@ h2::after {
   /*-- 「consultation」エリア --*/
   .message {
     font-size: 1.5rem;
-    padding: 1.5em 0.5em;
+    padding: 1.5em 1em;
   }
   .message br {
     display: none;
@@ -353,8 +356,9 @@ h2::after {
   .desc-area p {
     text-align: left;
     font-size: 1.5rem;
+    padding: 0 2em;
   }
-  .desc-container {
+  .desc-container-inner {
     flex-direction: column;
     align-items: center;
     width: auto;
@@ -363,6 +367,10 @@ h2::after {
   .desc-container dl dt {
     font-size: 1.5rem;
     margin-top: 1em;
+  }
+
+  .message-long {
+    text-align: left;
   }
 
 }
