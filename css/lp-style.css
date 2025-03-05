@@ -8,6 +8,15 @@
 
 h2 {
   font-size: 2rem;
+  text-align: center;
+}
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #000;
+  margin: 0.5em auto 0;
 }
 
 /* ========================
@@ -25,6 +34,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-line-button-area {
+  position: fixed;
+  right: 50px;
 }
 .line-button {
   display: inline-block;
@@ -51,6 +64,8 @@ h2 {
   max-width: 90%;
   margin: 0 auto;
 }
+
+/* メインのLINE誘導エリア */
 .inner .line-button-area {
   text-align: center;
 }
@@ -59,13 +74,13 @@ h2 {
   font-size: 2rem;
   line-height: 2;
 }
+
 .main-phrase {
-  margin-top: 100px;
-  font-size: 3rem;
+  margin-top: 1em;
+  font-size: 2.5rem;
   line-height: 2;
 }
 .desc {
-  margin-top: 50px;
   font-size: 1.5rem;
 }
 
@@ -79,6 +94,10 @@ h2 {
   align-items: normal;
   gap: 50px;
   padding-left: 40px;
+}
+/* ファーストビューだけ改行を無効化 */
+.first-view br {
+  display: none;
 }
 .lp-first-view-text {
   font-size: 2rem;
@@ -99,18 +118,6 @@ h2 {
 .introduction {
   background-color: #eadebb;
 }
-h2 {
-  text-align: center;
-}
-h2::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 1px;
-  background-color: #000;
-  margin-top: 20px;
-  margin: 0 auto;
-}
 
 /*-- 「Service」セクション --*/
 .service {
@@ -130,7 +137,7 @@ h2::after {
   margin-top: 20px;
 }
 
-/*-- LINEボタンエリア --*/
+/*-- LINE誘導エリア --*/
 .line-area {
   padding: 60px 0;
 }
@@ -141,8 +148,8 @@ h2::after {
 .line-area p::before {
   content: '↓';
 }
-.line-button-area {
-  margin-top: 60px;
+.big-line-button-area {
+  margin-top: 40px;
 }
 
 /*-- 「コーチングスクール」エリア --*/
@@ -189,4 +196,122 @@ h2::after {
 }
 .desc-container dl dd {
   margin-top: 20px;
+}
+
+/*-- ボトムのLINE誘導エリア --*/
+
+.bottom-line-area {
+  background-image: linear-gradient(90deg, #EADEBB,#FFF8E5 );
+}
+
+@media screen and (max-width: 768px) {
+
+  /* ========================
+  全体
+  ======================== */
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+
+  /* ========================
+  ヘッダー
+  ======================== */
+
+  .lp-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .lp-header-inner{
+    height: 50px;
+    position: relative;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .header-line-button-area {
+    right: 20px;
+    font-size: 0.8rem;
+  }
+
+  .header-line-button-area .line-button {
+    min-width: auto;
+    padding: 0 1rem;
+    line-height: 30px;
+  }
+
+  /* ========================
+  メイン
+  ======================== */
+
+  /* メインのLINE誘導エリア */
+  .inner .line-button {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
+  .main-phrase {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .desc {
+    margin-top: 2em;
+    font-size: 1rem;
+  }
+
+  /*-- ファーストビュー --*/
+  .first-view {
+    /* メインCSSの記述 */
+
+    background-image: url(../img/jobhunting-support-sp.jpeg);
+    align-items: normal;
+    gap: 50px;
+    padding-left: 20px;
+  }
+  /* ファーストビューだけ改行を無効化 */
+  .first-view br {
+    display: block;
+  }
+  .lp-first-view-text {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .lp-first-view-text span {
+    line-height: 2.5;
+  }
+  .first-view p {
+    font-size: 1rem;
+    padding-left: 1em;
+  }
+
+  /*-- 「Service」セクション --*/
+
+  .service-contents {
+    margin-top: 3em;
+  }
+  .service-contents li {
+    padding: 1em 2em;
+    background-color: #fff;
+  }
+  .service-contents li:not(.service-contents li:nth-child(1)) {
+    margin-top: 1.8em;
+  }
+  .service-contents li p{
+    margin-top: 0.8em;
+  }
+
+  /*-- 「consultation」エリア --*/
+  .desc-container {
+    width: auto;
+  }
+  
+
 }
