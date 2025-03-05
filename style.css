@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* PCファーストで記述 */
+/* PCファーストで記述。LPのSP版CSSからpaddingやmarginを相対的な単位で記述する素晴らしさに気づいている */
 
 ul,
 ol {

@@ -39,14 +39,17 @@ h2::after {
   position: fixed;
   right: 50px;
 }
+
+/* LINE誘導ボタン共通 */
 .line-button {
   display: inline-block;
   color: #fff;
   background-color: #06C755;
-  min-width: 326px;
-  line-height: 50px;
+  min-width: auto;
+  padding: 0 1rem;
+  line-height: 2.5;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
 /* ヘッダーロゴの設定はメインサイトと同じ */
@@ -72,7 +75,6 @@ h2::after {
 .inner .line-button {
   min-width: 600px;
   font-size: 2rem;
-  line-height: 2;
 }
 
 .main-phrase {
@@ -163,6 +165,8 @@ h2::after {
 }
 
 /*-- 「consultation」エリア --*/
+
+/* 背景色の都合でinnerクラスを付与していない */
 .message {
   font-size: 3rem;
   text-align: center;
@@ -242,7 +246,6 @@ h2::after {
   }
 
   .header-line-button-area .line-button {
-    min-width: auto;
     padding: 0 1rem;
     line-height: 30px;
   }
@@ -308,10 +311,58 @@ h2::after {
     margin-top: 0.8em;
   }
 
-  /*-- 「consultation」エリア --*/
-  .desc-container {
-    width: auto;
+  /*-- LINE誘導エリア --*/
+  .line-area {
+    padding: 2em 0;
   }
-  
+
+  .line-area p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .line-area p::before {
+    content: '↓';
+  }
+
+  .big-line-button-area {
+    margin-top: 1em;
+  }
+
+  /*-- 「コーチングスクール」エリア --*/
+  .school br {
+    display: none;
+  }
+
+
+  .school .h2-heading {
+    font-size: 1.1rem;
+  }
+
+  /*-- 「consultation」エリア --*/
+  .message {
+    font-size: 1.5rem;
+    padding: 1.5em 0.5em;
+  }
+  .message br {
+    display: none;
+  }
+  .desc-area {
+    padding: 2em 1em 2em;
+  }
+  .desc-area p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .desc-container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 1em auto 0;
+  }
+  .desc-container dl dt {
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
 
 }
