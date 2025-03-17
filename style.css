@@ -2,6 +2,7 @@
 
 /* PCファーストで記述。LPのSP版CSSからpaddingやmarginを相対的な単位で記述する素晴らしさに気づいている */
 
+/* リセットCSSで変わっていない部分をリセット。およびフォントなどを変更 */
 ul,
 ol {
   list-style: none;
