@@ -333,12 +333,17 @@ img {
 フッター
 ======================== */
 
+.footer-inner {
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .footer {
   background-color: #EADEBB;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .footer-logo {
@@ -349,7 +354,6 @@ img {
 .address {
   margin-top: 20px;
   font-size: 1rem;
-  text-align: center;
 }
 
 .footer .icon-list-wrapper {
@@ -577,7 +581,7 @@ img {
 
   /* ========================
   フッター
-  ======================== */
+  ======================== */  
 
   .footer-logo {    
     font-size: 1.5rem;
