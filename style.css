@@ -287,9 +287,10 @@ img {
 }
 
 /*-- 「CRED」コンテンツ --*/
-.cred {
-  padding: 60px 0 120px;
+.cred {  
+  padding: 180px 0 120px;
   background-color: #F5F5F5;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 .cred-inner {
   width: 1100px;
@@ -553,7 +554,7 @@ img {
 
   /*-- 「CRED」コンテンツ --*/
   .cred {
-    padding: 30px 0;
+    padding: 100px 0 30px;
   }
   .cred-main-wrapper {
     margin-top: 30px;
