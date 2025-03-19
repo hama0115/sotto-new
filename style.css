@@ -63,7 +63,8 @@ img {
 ======================== */
 
 .header {
-  background-color: #EADEBB;
+  color: #fff;
+  background-color: #ff9100;
 }
 
 .header-inner {
@@ -89,6 +90,7 @@ img {
   font-size: 1rem;
 }
 .site-menu ul li:hover {
+  color: #ff9100;
   background-color: #fff;
   transition-duration: 0.3s;
 }
@@ -239,7 +241,7 @@ img {
   text-align: center;
 }
 .heading h2 {
-  color: #8EBA70;
+  color: #ff9100;
   font-size: 3rem;
 }
 .h2-with {
@@ -339,7 +341,8 @@ img {
 }
 
 .footer {
-  background-color: #EADEBB;
+  color: #fff;
+  background-color: #ff9100;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
