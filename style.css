@@ -317,9 +317,12 @@ img {
 }
 
 /*-- 「MISSION」コンテンツ --*/
+.mission-wrapper {
+  background-color: #F5F5F5;
+}
 .mission {  
   padding: 180px 0 120px;
-  background-color: #fff;
+  background-color: #000;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
@@ -328,21 +331,18 @@ img {
   max-width: 90%;
   margin: 0 auto;
 }
-.yellow-line {
-  background-image: linear-gradient(transparent 70%, #ff6 30%);
-  padding-bottom: 0.2rem;
+.mission .h2-with {
+  color: #fff;
 }
 .mission-sub {
   display: flex;
   flex-wrap: wrap;
   row-gap: 50px;
+  column-gap: 50px;
   margin-top: 120px;
 }
-.mission-text-area {  ;
+.mission-text-area {
   width: calc((100% - 50px) / 2);
-}
-.mission-sub .mission-text-area:nth-child(odd) {
-  margin-right: 50px;
 }
 .mission-title-area {
   display: flex;
@@ -350,23 +350,20 @@ img {
 }
 .mission-title-area h3 {
   font-size: 4rem;
+  color: #ff9100;
 }
 .mission-title-area p {
   position: absolute;
   right: 0;
   bottom: 10px;
+  color: #fff;
   font-size: 2rem;
 }
 .mission-text {
   margin-top: 2em;
+  color: #fff;
   font-size: 1.2rem;
   line-height: 2;
-}
-.mission-text-area:not(.mission-text-area-first) {
-}
-.mission-text-area h3 {
-}
-.mission-text {
 }
 
 /* ========================
@@ -616,6 +613,46 @@ img {
   .cred-text {
     font-size: 1rem;
   }
+
+  /*-- 「MISSION」コンテンツ --*/
+  .mission {  
+    padding: 100px 0 30px;
+  }
+  .mission-inner {
+    width: auto;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .mission-sub {
+    display: block;
+    margin-top: 0;
+  }
+  .mission-text-area {
+    width: auto;
+    margin-top: 50px;
+  }
+  .mission-title-area {
+    display: flex;
+    position: relative;
+  }
+  .mission-title-area h3 {
+    font-size: 3rem;
+    color: #ff9100;
+  }
+  .mission-title-area p {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .mission-text {
+    margin-top: 1em;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  
 
   /* ========================
   フッター
